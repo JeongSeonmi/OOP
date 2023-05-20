@@ -1,0 +1,2 @@
+C:\C++\ch2\x64\Debug\ch2.exe
+C:\C++\ch2\ch2-1\x64\Debug\ch2.exe
