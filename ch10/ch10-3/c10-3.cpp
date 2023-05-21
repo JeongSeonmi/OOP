@@ -1,3 +1,12 @@
+/*****************************************************************/
+/*             HW#7 : c10-3                                      */
+/*  작성자 : 정선미                     날짜 : 2023년 5월 15일     */
+/*                                                               */
+/* 문제 정의 : 다음과 같은 BaseArray 클래스를 상속받아 큐처럼       */
+/*  작동하는 MyQueue 클래스를 작성하라.                            */
+/******************************************************************/
+
+
 #include<iostream>
 #include<string.h>
 using namespace std;
@@ -25,13 +34,13 @@ class MyQueue : public BaseArray{  //원형 큐
 public:
     MyQueue(int capacity) : BaseArray(capacity){;}
     void enqueue(int n){  //큐에 삽입
-        if(rear > getCapacity())
+        if(rear > getCapacity())  //가득 찼는지 판단
             exit(1);
         rear++;
         put(rear, n);
     }
     int dequeue(){   //큐에서 삭제
-        if(rear < 0)
+        if(rear < 0)    //비어있는지 판단
             exit(1);
         ++front;
         rear--;
