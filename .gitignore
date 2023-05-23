@@ -1,4 +1,4 @@
-.json
-.exe
-.vcxproj
-.sln
+*.json
+*.exe
+*.vcxproj
+*.sln
