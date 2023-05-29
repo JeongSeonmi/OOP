@@ -33,7 +33,7 @@ Book :: Book(const Book &book)
 
 void Book :: set(char *title, int price)
 {
-    this->price = price;  //객체간의 대입 : 대입 연산자 이용????
+    this->price = price;
     int len = strlen(title) +1;		//입력받은 문자열의 길이 +1 (/0포함)로 사이즈 설정
 	this->title = new char[len];
     strcpy(this->title, title);
