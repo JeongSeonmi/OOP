@@ -45,7 +45,7 @@ void Book::set(const char* title, int price) {
 
 int main() {
 	Book cpp("명품C++", 10000);
-	Book java = cpp;
+	Book java = cpp; //객체간의 초기화 : "디폴트" 복사 생성자 이용
 	java.set("명품자바", 12000);
 	cpp.show();		//문자출력 함수
 	java.show();

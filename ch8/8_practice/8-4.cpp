@@ -24,7 +24,7 @@ Book :: Book(char *title, int price)
 
 Book :: Book(const Book &book)
 {
-    this->price = book.price;
+    this->price = book.price;  //class BooK의 맴버변수.. 그니까 붕어빵 틀을 빌려온다?
     int len = strlen(book.title)+1;
     this->title = new char[len];
     strcpy(this->title, book.title);
@@ -46,10 +46,12 @@ Book::~Book(){
 
 int main(){
     Book cpp("명품 C++", 10000);
-    Book java(cpp);  //객체간의 초기화 : 복사 생성자 이용
+    Book java(cpp);  //참조에 의한 호출
+    Book c(java);
     java.set("명품자바", 20000); //대입연산자를 사용하지 않고 set 함수를 이용해서 그 역할을 충당하고 있다.
     cpp.show();
     java.show();
+    c.show();
 }
 
 /* 
