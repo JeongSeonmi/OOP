@@ -13,7 +13,7 @@ class Circle {
 public :
 	Circle() { radius = 1; }
 	Circle(int radius) { this->radius = radius; }
-	void readRadius(int radius);
+	void readRadius(Circle &c);
 	void setRadius(int radius) { this->radius = radius; }
 	double getArea() { return 3.14 * radius * radius; }
 };
