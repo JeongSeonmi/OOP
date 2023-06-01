@@ -1,7 +1,10 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "xiosbase": "cpp",
+        "system_error": "cpp",
+        "xlocale": "cpp"
     },
     "files.exclude": {
         "**/*.rpyc": true,
