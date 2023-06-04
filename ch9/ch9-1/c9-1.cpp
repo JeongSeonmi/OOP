@@ -24,7 +24,7 @@ Book Book :: operator+= (int op2) {
 };
 
 Book Book :: operator-= (int op2) {
-	this->price = this->price - op2;
+	this->price -= op2;
 	return *this;
 }
 
